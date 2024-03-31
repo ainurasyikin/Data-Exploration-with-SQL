@@ -1,6 +1,6 @@
 ## 📌 Solution
 
-### 1. 
+### 1. What is the average income of borrowers in the dataset?
 
 ````sql
 
@@ -48,8 +48,9 @@ ORDER BY
 **Answer:**
 
 
-### 3. What about the median number of measurements per user?
-#3 Are there any significant differences in default rates among different home ownership statuses?
+### 3. Are there any significant differences in default rates among different home ownership statuses?
+
+````sql
 
 SELECT
     Home,
@@ -62,6 +63,8 @@ GROUP BY
 
 
 ### 4. What is the relationship between loan amount and default status?
+
+````sql
 
 SELECT
     CASE
