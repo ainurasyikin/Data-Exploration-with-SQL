@@ -57,11 +57,11 @@ SELECT
 FROM
     credit_risk_analysis
 GROUP BY
-    Home;
+    Home
 
 
 
-#4. What is the relationship between loan amount and default status?
+### 4. What is the relationship between loan amount and default status?
 
 SELECT
     CASE
@@ -80,7 +80,7 @@ ORDER BY
     Loan_Amount_Range
     
 
-#5. How does the length of employment (emp_length) correlate with default rates?
+### 5. How does the length of employment (emp_length) correlate with default rates?
 
 SELECT
     Emp_length,
@@ -92,19 +92,19 @@ GROUP BY
 ORDER BY
     Emp_length
 
-#6. What is the distribution of loan amounts among different loan intents?
+### 6. What is the distribution of loan amounts among different loan intents?
 
 SELECT Intent, ROUND(AVG(Amount),2) AS Avg_Loan_Amount, MAX(Amount) AS Max_Loan_Amount, MIN(Amount) AS Min_Loan_Amount
 FROM credit_risk_analysis
 GROUP BY Intent
 
-#7. How does the interest rate vary with the length of credit history?
+### 7. How does the interest rate vary with the length of credit history?
 
 SELECT Cred_length, ROUND(AVG(Rate),2) AS Avg_Interest_Rate
 FROM credit_risk_analysis
 GROUP BY Cred_length
 
-#8. What is the average percentage of income allocated to loan payments for borrowers in different age groups?
+### 8. What is the average percentage of income allocated to loan payments for borrowers in different age groups?
 
 SELECT 
     CASE 
@@ -120,19 +120,19 @@ SELECT
 FROM credit_risk_analysis
 GROUP BY Age_Group
 
-#9. What is the default rate among borrowers with different lengths of employment (emp_length)?
+### 9. What is the default rate among borrowers with different lengths of employment (emp_length)?
 
 SELECT Emp_length, AVG('Default') AS Default_Rate
 FROM credit_risk_analysis
 GROUP BY Emp_length
 
-#10. How does the loan amount vary between borrowers who own homes versus those who rent?
+### 10. How does the loan amount vary between borrowers who own homes versus those who rent?
 
 SELECT Home, ROUND(AVG(Amount),2) AS Avg_Loan_Amount
 FROM credit_risk_analysis
 GROUP BY Home
 
-#11. What is the distribution of loan intents among borrowers who have defaulted on their loans?
+### 11. What is the distribution of loan intents among borrowers who have defaulted on their loans?
 
 SELECT Intent, COUNT(*) AS Default_Count
 FROM credit_risk_analysis
@@ -140,7 +140,7 @@ WHERE 'Default' = 'Y'
 GROUP BY Intent
 ORDER BY Default_Count DESC
 
-#12. What is the average income of borrowers who have defaulted on their loans?
+### 12. What is the average income of borrowers who have defaulted on their loans?
 
 SELECT AVG(Income) AS Avg_Income
 FROM credit_risk_analysis
