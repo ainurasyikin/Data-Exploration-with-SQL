@@ -5,7 +5,7 @@
 
 ````sql
 
-SELECT AVG(income) AS avg_income
+SELECT ROUND(AVG(income),2) AS avg_income
 FROM credit_risk_analysis
 
 ````
