@@ -198,7 +198,7 @@ ORDER BY Default_Count DESC
 
 SELECT AVG(Income) AS Avg_Income
 FROM credit_risk_analysis
-WHERE `Default` = 'Y';
+WHERE `Default` = 'Y'
 ````
 
 **Answer:**
