@@ -60,6 +60,8 @@ FROM
 GROUP BY
     Home
 
+````
+**Answer:**
 
 
 ### 4. What is the relationship between loan amount and default status?
@@ -82,8 +84,14 @@ GROUP BY
 ORDER BY
     Loan_Amount_Range
     
+````
+
+**Answer:**
+
 
 ### 5. How does the length of employment (emp_length) correlate with default rates?
+
+````sql
 
 SELECT
     Emp_length,
@@ -95,19 +103,38 @@ GROUP BY
 ORDER BY
     Emp_length
 
+````
+
+**Answer:**
+
+
 ### 6. What is the distribution of loan amounts among different loan intents?
+
+````sql
 
 SELECT Intent, ROUND(AVG(Amount),2) AS Avg_Loan_Amount, MAX(Amount) AS Max_Loan_Amount, MIN(Amount) AS Min_Loan_Amount
 FROM credit_risk_analysis
 GROUP BY Intent
 
+````
+
+**Answer:**
+
 ### 7. How does the interest rate vary with the length of credit history?
+
+````sql
 
 SELECT Cred_length, ROUND(AVG(Rate),2) AS Avg_Interest_Rate
 FROM credit_risk_analysis
 GROUP BY Cred_length
 
+````
+
+**Answer:**
+
 ### 8. What is the average percentage of income allocated to loan payments for borrowers in different age groups?
+
+````sql
 
 SELECT 
     CASE 
@@ -123,19 +150,37 @@ SELECT
 FROM credit_risk_analysis
 GROUP BY Age_Group
 
+````
+
+**Answer:**
+
 ### 9. What is the default rate among borrowers with different lengths of employment (emp_length)?
+
+````sql
 
 SELECT Emp_length, AVG('Default') AS Default_Rate
 FROM credit_risk_analysis
 GROUP BY Emp_length
 
+````
+
+**Answer:**
+
 ### 10. How does the loan amount vary between borrowers who own homes versus those who rent?
+
+````sql
 
 SELECT Home, ROUND(AVG(Amount),2) AS Avg_Loan_Amount
 FROM credit_risk_analysis
 GROUP BY Home
 
+````
+
+**Answer:**
+
 ### 11. What is the distribution of loan intents among borrowers who have defaulted on their loans?
+
+````sql
 
 SELECT Intent, COUNT(*) AS Default_Count
 FROM credit_risk_analysis
@@ -143,9 +188,18 @@ WHERE 'Default' = 'Y'
 GROUP BY Intent
 ORDER BY Default_Count DESC
 
+````
+
+**Answer:**
+
 ### 12. What is the average income of borrowers who have defaulted on their loans?
+
+````sql
 
 SELECT AVG(Income) AS Avg_Income
 FROM credit_risk_analysis
 WHERE `Default` = 'Y';
+````
+
+**Answer:**
 
