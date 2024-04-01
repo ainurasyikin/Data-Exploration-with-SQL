@@ -47,6 +47,9 @@ ORDER BY
 ````
 **Answer:**
 
+<img width="87" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/f75548a8-38da-4822-a368-cba97500e96f">
+
+
 
 ### 3. Are there any significant differences in default rates among different home ownership statuses?
 
