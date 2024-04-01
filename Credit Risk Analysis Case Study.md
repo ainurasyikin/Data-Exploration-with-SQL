@@ -1,4 +1,4 @@
-<img width="355" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/0fbab964-9f5c-445c-be34-458b5f3a60a9">## 📌 Solution
+## 📌 Solution
 
 ### 1. What is the average income of borrowers in the dataset?
 
