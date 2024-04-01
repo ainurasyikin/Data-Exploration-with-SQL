@@ -216,5 +216,6 @@ WHERE `Default` = 'Y'
 ````
 
 **Answer:**
+
 <img width="86" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/d8f3cd51-fd9c-4f79-8e1f-5d89352333fd">
 
