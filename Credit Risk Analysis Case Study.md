@@ -1,4 +1,4 @@
-## 📌 Solution
+<img width="355" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/0fbab964-9f5c-445c-be34-458b5f3a60a9">## 📌 Solution
 
 ### 1. What is the average income of borrowers in the dataset?
 
@@ -63,6 +63,8 @@ GROUP BY
 ````
 **Answer:**
 
+<img width="194" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/abd8e371-634c-44c3-90a1-ab3c245bb348">
+
 
 ### 4. What is the relationship between loan amount and default status?
 
@@ -87,6 +89,8 @@ ORDER BY
 ````
 
 **Answer:**
+
+<img width="187" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/62e0bf89-ec5f-496c-b15f-8477c7a58bbb">
 
 
 ### 5. How does the length of employment (emp_length) correlate with default rates?
@@ -119,6 +123,9 @@ GROUP BY Intent
 ````
 
 **Answer:**
+
+<img width="355" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/192c0b1c-00c3-4e0e-97e6-6a72a3266c87">
+
 
 ### 7. How does the interest rate vary with the length of credit history?
 
@@ -154,6 +161,9 @@ GROUP BY Age_Group
 
 **Answer:**
 
+<img width="180" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/5459e836-2e54-4916-a972-0f985bbcaad3">
+
+
 ### 9. What is the default rate among borrowers with different lengths of employment (emp_length)?
 
 ````sql
@@ -178,6 +188,8 @@ GROUP BY Home
 
 **Answer:**
 
+<img width="162" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/b3cb6f63-4b04-49ce-a3a4-3d36b82544fc">
+
 ### 11. What is the distribution of loan intents among borrowers who have defaulted on their loans?
 
 ````sql
@@ -192,6 +204,8 @@ ORDER BY Default_Count DESC
 
 **Answer:**
 
+<img width="140" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/a4e333a0-4818-4778-910f-c117bc279d78">
+
 ### 12. What is the average income of borrowers who have defaulted on their loans?
 
 ````sql
@@ -202,4 +216,5 @@ WHERE `Default` = 'Y'
 ````
 
 **Answer:**
+<img width="86" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/d8f3cd51-fd9c-4f79-8e1f-5d89352333fd">
 
