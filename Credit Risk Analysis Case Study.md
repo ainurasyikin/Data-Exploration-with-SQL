@@ -114,6 +114,9 @@ ORDER BY
 
 **Answer:**
 
+<img width="77" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/ebcf13e0-48af-4597-8295-acb2a1226219">
+
+
 
 ### 6. What is the distribution of loan amounts among different loan intents?
 
@@ -137,10 +140,14 @@ GROUP BY Intent
 SELECT Cred_length, ROUND(AVG(Rate),2) AS Avg_Interest_Rate
 FROM credit_risk_analysis
 GROUP BY Cred_length
+ORDER BY Cred_length
 
 ````
 
 **Answer:**
+
+<img width="89" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/ea484b27-2247-436e-ae55-a46df4db1f13">
+
 
 ### 8. What is the average percentage of income allocated to loan payments for borrowers in different age groups?
 
@@ -178,6 +185,9 @@ GROUP BY Emp_length
 ````
 
 **Answer:**
+
+<img width="66" alt="image" src="https://github.com/ainurasyikin/SQL/assets/116057562/700588fb-2d5b-4cca-8e87-eecde90b5a0f">
+
 
 ### 10. How does the loan amount vary between borrowers who own homes versus those who rent?
 
